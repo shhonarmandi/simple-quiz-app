@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">Quiz App</h1>
+
+			<form class="form" onsubmit="submitForm(event)">
+				<ol>
+					<li class="question">
+						<p>Which one is correct? (A is correct)</p>
+						<div class="answer">
+							<input type="radio" id="q0-0" name="q0" value="A" required />
+							<label for="q0-0">A</label>
+						</div>
+						<div class="answer">
+							<input type="radio" id="q0-1" name="q0" value="B" />
+							<label for="q0-1">B</label>
+						</div>
+						<div class="answer">
+							<input type="radio" id="q0-2" name="q0" value="C" />
+							<label for="q0-2">C</label>
+						</div>
+						<div class="answer">
+							<input type="radio" id="q0-3" name="q0" value="D" />
+							<label for="q0-3">D</label>
+						</div>
+					</li>
+
+					<li class="question">
+						<p>Which one is correct? (B is correct)</p>
+						<div class="answer">
+							<input type="radio" id="q1-0" name="q1" value="A" required />
+							<label for="q1-0">A</label>
+						</div>
+						<div class="answer">
+							<input type="radio" id="q1-1" name="q1" value="B" />
+							<label for="q1-1">B</label>
+						</div>
+						<div class="answer">
+							<input type="radio" id="q1-2" name="q1" value="C" />
+							<label for="q1-2">C</label>
+						</div>
+						<div class="answer">
+							<input type="radio" id="q1-3" name="q1" value="D" />
+							<label for="q1-3">D</label>
+						</div>
+					</li>
+				</ol>
+
+				<button id="submit" type="submit" class="submit">Submit</button>
+			</form>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
