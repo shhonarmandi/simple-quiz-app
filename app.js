@@ -79,7 +79,7 @@ function compareCorrectAnswersWithUserAnswers(userAnswers) {
 		if (correctAnswerValue === userAnswerValue) {
 			highlightUserAnswerOnCheckingTheResult(userAnswerId, true);
 		} else {
-			userAnswerValue && highlightUserAnswerOnCheckingTheResult(userAnswerId, false);
+			highlightUserAnswerOnCheckingTheResult(userAnswerId, false);
 			highlightUserAnswerOnCheckingTheResult(correctAnswerId, true);
 		}
 	}
